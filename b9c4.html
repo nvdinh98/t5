@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="test"></div>
+<script>
+    let table = "<table>"
+    let a = 1;
+    let b = 1;
+    for (a = 1; a <= 10; a++){
+        table += "<tr>"
+        for ( b = 1; b <= 10 ; b++) {
+            table += `<td style ="border: solid 1px black"> ${b} x ${a} = ${b*a} </td>`
+        }
+        table += "<tr>"
+    }
+    table += "</table>"
+    document.getElementById("test").innerHTML = table ;
+</script>
+</body>
+</html>
